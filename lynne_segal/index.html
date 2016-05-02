@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Land Rover HTML5</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TimelineLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	
+<!--	<script src="/879366/Enabler_01_86.js" type="text/javascript"></script>-->
+   
+    <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    
+    
+ 
+<style type="text/css" media="screen">
+body{
+    outline: 1px solid red;
+	width: 600px;
+	height:500px;
+	margin: 0px;
+    background-color:#fff;	
+}
+    
+#loading_dc {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:298px;
+    height:248px;
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+}       
+#loading_image_dc {
+        position:absolute;
+        left:50%;
+        margin-left:-15px;
+        top:50%;
+        margin-top:-15px;   
+    
+}
+ #loading_image_dc img {
+        -webkit-animation: kfs-loading 1s linear 0s forwards infinite, kfs-t 1s linear 0s forwards 1;
+        -moz-animation: kfs-loading 1s linear 0s forwards infinite, kfs-t 1s linear 0s forwards 1;
+        -ms-animation: kfs-loading 1s linear 0s forwards infinite, kfs-t 1s linear 0s forwards 1;
+        animation: kfs-loading 1s linear 0s forwards infinite, kfs-t 1s linear 0s forwards 1;
+}
+
+    @-webkit-keyframes kfs-loading {
+        0% {-webkit-transform: rotate(0deg);}
+        100% {-webkit-transform: rotate(360deg);}
+    }   
+
+    @-webkit-keyframes kfs-t {
+         0% {opacity: 0;}        
+         75% {opacity: 1;}        
+         100% {opacity: 1;}
+    }
+
+    @-moz-keyframes kfs-loading {
+        0% {-moz-transform: rotate(0deg);}       
+        100% {-moz-transform: rotate(360deg);}
+    }   
+
+    @-moz-keyframes kfs-t {
+         0% {opacity: 0;}        
+         75% {opacity: 1;}        
+         100% {opacity: 1;}
+    }
+
+    @-ms-keyframes kfs-loading {
+        0% {-ms-transform: rotate(0deg);}        
+        100% {-ms-transform: rotate(360deg);}
+    }   
+
+    @-ms-keyframes kfs-t {
+         0% {opacity: 0;}        
+         75% {opacity: 1;}        
+         100% {opacity: 1;}
+    }
+
+    @keyframes kfs-loading {
+        0% {transform: rotate(0deg);}     
+        100% {transform: rotate(360deg);}
+    }   
+
+    @keyframes kfs-t {
+         0% {opacity: 0;}       
+         75% {opacity: 1;}        
+         100% {opacity: 1;}
+    }
+
+#container {
+    display:none;
+	position:absolute;
+    width: 600px;
+	height:500px;
+    border: 1px solid #999999;
+   
+    background-color: #FFFFFF;
+	overflow:hidden;
+
+    }
+
+#bgExit{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 400;
+	}
+    
+#topStrip{
+    display: block;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 90px;
+	overflow:hidden;
+	opacity: 1;
+	background-color: #FFFFFF;
+}
+
+#copy1{
+    position:absolute;
+    width: 300px;
+	height: 90px;
+    opacity: 0;
+    top: 0px;
+	left: 0px;
+    overflow:hidden;
+	opacity: 0;	
+}
+#copy2{
+    position:absolute;
+    width: 300px;
+	height: 90px;
+    opacity: 0;
+    top: 0px;
+	left: 0px;
+    overflow:hidden;
+	opacity: 0;	
+}
+#cta{
+    position:absolute;
+    width: 300px;
+	height: 90px;
+    opacity: 0;
+    top: 0px;
+	left: 0px;
+    overflow:hidden;
+	opacity: 0;	
+}
+#mainImage{
+    position:absolute;
+    bottom: -5px;
+	left: -70px;
+	overflow:hidden;
+	
+}
+#logo{
+    position:absolute;
+    width: 300px;
+	height: 90px;
+    top: 0px;
+	left: 0px;
+    overflow:hidden;
+	opacity: 1;	
+}
+
+#terms{
+    position:absolute;
+    width: 300px;
+	height: 25px;
+    bottom: 0px;
+	left: 0px;
+    overflow:hidden;
+	opacity: 0;	
+}	
+	
+</style>
+</head>
+ 
+<body>
+    <div id="loading_dc">
+        <div id="loading_image_dc">
+               <img src="loading.png">
+        </div>    
+    </div>
+    <div id="container">
+
+            <!--            <div id="mainImage"><img src="mainImg.jpg" /></div>-->
+           
+            <img id="mainImage" src="images/mum.png" /></img>
+            
+            <div id="topStrip"></div>
+            <div id="cta"><img src="cta.png" /></div>
+            <div id="copy1"><img src="copy1.png" /></div>
+            <div id="copy2"><img src="copy2.png" /></div>
+<!--            <div id="terms"><img src="terms.png" /></div>-->
+            <div id="logo"><img src="logo.png" /></div>
+            <div id="bgExit"></div>
+
+    </div>
+
+
+<script type="text/javascript">
+
+            //Initialize Enabler
+            if (Enabler.isInitialized()) {
+            init();
+            } else {
+            Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+            }
+            //Run when Enabler is ready
+            function init(){
+            
+            if(Enabler.isPageLoaded()){
+                politeInit();
+            }else{
+                Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+            } 
+        }
+
+        function politeInit(){      
+            //Load in Javascript
+           start();
+            document.getElementById("container").style.opacity=1;
+            document.getElementById("container").style.display="block";
+            document.getElementById("loading_dc").style.opacity=0;
+            document.getElementById("loading_dc").style.display="none";
+
+            }
+    
+			function clickthrough(){
+                
+			console.log("click");
+			Enabler.exit('HTML5_background_Clickthrough');
+			}
+		
+			var bgExit = document.getElementById('bgExit');
+		 	      bgExit.addEventListener('click', clickthrough, false);
+
+
+ 			function start (){
+                
+                    TweenLite.fromTo("#mainImage", 10, {scale:"0.85", opacity:1, transformOrigin:'50% 100%'},{scale:"1", opacity:1, ease:Quad.easeOut});
+                
+                
+                
+                
+                    TweenLite.to("#copy1", 0.5, {opacity:1, delay:0.5, ease:Quad.easeOut});
+                    TweenLite.to("#copy1", 0.5, {opacity:0, delay:3.5, ease:Quad.easeOut});
+                    TweenLite.to("#copy2", 0.5, {opacity:1, delay:4, ease:Quad.easeOut});
+                    TweenLite.to("#terms", 0.5, {opacity:1, delay:4, ease:Quad.easeOut});
+                    TweenLite.to("#copy2", 0.5, {opacity:0, delay:7, ease:Quad.easeOut});
+//                    TweenLite.to("#terms", 0.5, {opacity:0, delay:7, ease:Quad.easeOut});
+                    TweenLite.to("#cta", 0.5, {opacity:1, delay:7.5, ease:Quad.easeOut});
+                
+                }
+
+</script>
+</body>
+</html>
