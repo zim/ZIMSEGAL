@@ -1,0 +1,158 @@
+JOLYON SEGAL CV
+20 Empire Square,London N7 6JN
+Tel: 07958 200 055
+zimsegal@hotmail.com
+Date of Birth: 17/03/69     Marital status: Single
+PERSONAL
+PROFILE___________________________________________________________
+
+I have been working in the Internet field for over 10 years.
+I worked at EMAP for FHM.com for 7 years producing and maintaining A large and successful men's lifestyle web site. Using HTML/CSS/JavaScript. Developing for cross browser usability. In particular IE and Firefox and MAC.
+Before this I worked for Ministryofsound.com for three years. Producing and maintaining their web site in it's early days.
+I am always seeking to learn and grow. And am now keen to continue developing my skills and implement W3C and accessibility standards.
+MSc conversion course in Computing.
+
+WORK EXPERIENCE___________________________________________________________
+
+ARCHIBALD INGALL STRETTON, London			Nov 2009 – present	
+Front End Web Developer
+Responsibilities
+
+Production of O2 Preference capture microsite Using XHTML, CSS, JavaScript, JQuery, within .NET 2, visual studio 2008, SVN environment to W3C standards
+
+O2 Preference capture microsite – NOT YET LIVE
+
+
+SEVEN SQUARED, London					Aug 2009 – Nov 2009	
+Front End Web Developer
+Responsibilities
+
+Production of cutting edge web sites Using XHTML, CSS, JavaScript, JQuery, Silverstripe CMS to W3C standards.for Large projects
+
+ HYPERLINK "http://www3.sainsburys.co.uk/littleones/" http://www3.sainsburys.co.uk/littleones/
+Royal Bank of Scotland – NOT YET LIVE
+Seven Squared – NOT YET LIVE
+
+
+
+MYKINDAPLACE/BURST INTERACTIVE, London		Mar 2008 – June 2009	
+Front End Web Developer
+Responsibilities
+
+Producing and maintaining http://www.mykindaplace.com web site Using XHTML, HTML, CSS, JavaScript, JQuery, Photoshop, Visual Studio 2005 to W3C standards.
+Production and maintenance of Sites and microsites for Burst Interactive Using XHTML, HTML, CSS, JavaScript, JQuery, Visual Studio 2005 (And numerous microsites for sky digital as MYKINDAPLACE/BURST INTERACTIVE is owned by sky digital) to W3C standards.
+
+ Including:
+
+ HYPERLINK "http://www.umusic.co.uk/" http://www.umusic.co.uk/
+ HYPERLINK "http://inkpop.com/" http://inkpop.com/
+ HYPERLINK "http://www.authonomy.com" http://www.authonomy.com
+ HYPERLINK "http://www.lolasland.com" http://www.lolasland.com
+http://www.angiesmith.co.uk
+http://www.redrockcreative.co.uk
+http://news.sky.com/skynews/video
+ HYPERLINK "http://style.sky.com/" http://style.sky.com/
+
+
+
+GUERRILLA, London						Mar 2007 – Nov 2007	
+Web Developer
+Responsibilities
+
+Producing and maintaining http://www.Guerrilla.uk.com web site Using HTML, JavaScript, PHP, Photoshop, DreamWeaver 8.
+Production of Site http:// HYPERLINK "http://www.shortlist.com" www.shortlist.com using ASP.NET 2
+This was my first project in ASP.NET 2 using Microsoft Visual Studio .NET 2005 and SQL Server to produce the CMS behind this site. I very much enjoy this development environment and want to progress in this area.
+
+
+
+EMAP UK FHM, London					Jan 2000 – Mar 2007	
+Web Developer
+Responsibilities
+
+Producing and maintaining FHM web site Using HTML, JavaScript, ASP, Enterprise Manager. Photoshop, Homesite.
+Project managing site development from beginning to end, including asset and people management.
+Production of internet based marketing tools.
+Manage internal and external production relations for FHM.com website.
+The creative development of the FHM.com web site.
+Testing and bug fixing.
+Contributing ideas and suggestions for the FHM.com website
+Project management.
+
+Day to day
+Hand coding of Micro sites and Competitions for the FHM.com web (Using intermediate classic ASP to develop data base driven pages that write to and read from SQL tables) – Including 100 Sexiest voting mechanism, 100 Greatest Internet Games and many more.
+Coding of site for cross browser compatability.
+Hand coding of Micro sites and Competitions for advertising and marketing departments using XHTML, ASP, CSS, JavaScript.
+Manage and provide information from FHM Microsoft SQL database for advertising and marketing departments.
+Help to develop and maintain the Content Management System for FHM.com using ASP and Microsoft SQL Server.
+Project manage micro sites from start to finish.
+Day to day management and bug fixing of FHM.Com web site. Including Code changes and image changes.
+Construction of FHM.COM email newsletters using HTML and Bluestreak Email system.
+
+MINISTRY OF SOUND, London					Jan 1997 – Jan 2000	
+Web Developer
+Responsibilities
+
+Hand coding of Ministryofsound.com using HTML, ASP, Javascript
+Helped develop and maintain the Content Management System for MoS.COM using HTML ASP and SQL server
+
+
+EDUCATION___________________________________________________________________
+
+North London University	- MSC (Conversion) Computing (pass)	1994 - 1995
+Iinstitute of Latin American Studies (LU) – Ma Economics	1993 - 1994
+Westminster University – Ba (Hons) Social Sciences		1990 – 1993
+
+A Levels in Economics, C; Geography, C; Government and Politics, D
+Five O’Levels grade A-C including Maths, B; English, C
+
+INTERESTS AND ACHIEVEMENTS________________________________________________
+
+	London Judo Champion 1994
+
+Other interests
+	Music, sport - playing and spectating, cinema, gym, badminton, reading
+
+
+ADDITIONAL INFORMATION_____________________________________________________
+Full driving license
+
+Courses
+‘Learning Tree’ Developing ASP.NET 2.0 Web Applications: Hands-On
+
+
+Skills matrix
+Skill
+Months Duration
+Score (Out of 5)
+Visual Studio
+  4 years
+3
+ASP.NET 2
+  1 years
+1
+ASP
+  4 years
+2
+JavaScript
+  7 years
+3
+CSS
+  7 years
+4
+HTML
+10 years
+5
+SQL (inc Stored Procedures)
+  5 years
+3
+VB
+  5 years
+3
+XML
+  1 years
+2
+Photoshop
+  7 years
+4
+
+REFEREES Available on request

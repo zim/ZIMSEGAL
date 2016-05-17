@@ -790,9 +790,11 @@ function number_of_files($directories) {
 <head>
 
 <title>Norton</title>
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/stylezim.css" rel="stylesheet" type="text/css" media="screen"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+    
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700' rel='stylesheet' type='text/css'>    
 </head>
 <body id="css-zen-garden">
     
@@ -800,49 +802,149 @@ function number_of_files($directories) {
 
 	<section class="intro" id="zen-intro">
 		<header role="banner">
-			<h1>CSS Zen Garden</h1>
+			<h1>CSS Zen cunt</h1>
 			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
 		</header>
 
 		<div class="summary" id="zen-summary" role="article">
-			<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
-			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
+			<p>I have worked in the internet field for 20 years and still enjoy the challenges that are presented with every new project.</p>
+			<p>I want to continue to grow my skills in the internet field.</p>
 		</div>
 
 		<div class="preamble" id="zen-preamble" role="article">
-			<h3>The Road to Enlightenment</h3>
-			<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
-			<p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, and the major browser creators.</p>
-			<p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+			<h3>Early Career</h3>
+			<p>MINISTRY OF SOUND, London Jan 1997 – Jan 2000</p>	
+<p>Web Developer</p>
+<p>Responsibilities</p>
+
+<p>Hand coding of Ministryofsound.com using HTML, ASP, Javascript</p>
+<p>Helped develop and maintain the Content Management System for MoS.COM using HTML ASP and SQL server</p>
 		</div>
 	</section>
 
 	<div class="main supporting" id="zen-supporting" role="main">
 		<div class="explanation" id="zen-explanation" role="article">
-			<h3>So What is This About?</h3>
-			<p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.</p>
-			<p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can always push it further.</p>
+			<h3>Learning In The Field</h3>
+			<p>EMAP UK FHM, London					Jan 2000 – Mar 2007	
+Web Developer
+Responsibilities
+
+<p>Producing and maintaining FHM web site Using HTML, JavaScript, ASP, Enterprise Manager. Photoshop, Homesite.</p>
+<p>Project managing site development from beginning to end, including asset and people management.</p>
+<p>Production of internet based marketing tools.</p>
+<p>Manage internal and external production relations for FHM.com website.</p>
+<p>The creative development of the FHM.com web site.</p>
+<p>Testing and bug fixing.</p>
+<p>Contributing ideas and suggestions for the FHM.com website</p>
+<p>Project management.</p>
+
+<p>Day to day</p>
+<p>Hand coding of Micro sites and Competitions for the FHM.com web (Using intermediate classic ASP to develop data base driven pages that write to and read from SQL tables) – Including 100 Sexiest voting mechanism, 100 Greatest Internet Games and many more.
+Coding of site for cross browser compatability.</p>
+<p>Hand coding of Micro sites and Competitions for advertising and marketing departments using XHTML, ASP, CSS, JavaScript.</p>
+<p>Manage and provide information from FHM Microsoft SQL database for advertising and marketing departments.</p>
+<p>Help to develop and maintain the Content Management System for FHM.com using ASP and Microsoft SQL Server.</p>
+<p>Project manage micro sites from start to finish.</p>
+<p>Day to day management and bug fixing of FHM.Com web site. Including Code changes and image changes.</p>
+<p>Construction of FHM.COM email newsletters using HTML and Bluestreak Email system.</p>
 		</div>
 
 		<div class="participation" id="zen-participation" role="article">
-			<h3>Participation</h3>
-			<p>Strong visual design has always been our focus. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the <a href="http://www.mezzoblue.com/zengarden/resources/" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-			<p>You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</p>
-			<p>Download the sample <a href="/examples/index" title="This page's source HTML code, not to be modified.">HTML</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">CSS</a> to work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server under your control. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that file and all associated assets, and if we choose to use it we will download it and place it on our server.</p>
+			<h3>Networking... Growing My Skills</h3>
+            
+            <p>WILSON FLETHCER</p>
+            
+			<p>ARCHIBALD INGALL STRETTON, London Nov 2009 – present</p>
+<p>Front End Web Developer</p>
+<p>Responsibilities</p>
+
+<p>Production of O2 Preference capture microsite Using XHTML, CSS, JavaScript, JQuery, within .NET 2, visual studio 2008, SVN environment to W3C standards</p>
+
+<p>O2 Preference capture microsite – NOT YET LIVE</p>
+
+
+<p>SEVEN SQUARED, London Aug 2009 – Nov 2009</p>
+<p>Front End Web Developer</p>
+<p>Responsibilities</p>
+
+<p>Production of cutting edge web sites Using XHTML, CSS, JavaScript, JQuery, Silverstripe CMS to W3C standards.for Large projects</p>
+
+ <p>HYPERLINK "http://www3.sainsburys.co.uk/littleones/" http://www3.sainsburys.co.uk/littleones/</p>
+<p>Royal Bank of Scotland – NOT YET LIVE</p>
+<p>Seven Squared – NOT YET LIVE</p>
+
+
+
+<p>MYKINDAPLACE/BURST INTERACTIVE, London Mar 2008 – June 2009</p>
+<p>Front End Web Developer</p>
+<p>Responsibilities</p>
+
+<p>Producing and maintaining http://www.mykindaplace.com web site Using XHTML, HTML, CSS, JavaScript, JQuery, Photoshop, Visual Studio 2005 to W3C standards.</p>
+<p>Production and maintenance of Sites and microsites for Burst Interactive Using XHTML, HTML, CSS, JavaScript, JQuery, Visual Studio 2005 (And numerous microsites for sky digital as MYKINDAPLACE/BURST INTERACTIVE is owned by sky digital) to W3C standards.</p>
+
+ <p>Including:</p>
+
+ <p>HYPERLINK "http://www.umusic.co.uk/" http://www.umusic.co.uk/</p>
+ <p>HYPERLINK "http://inkpop.com/" http://inkpop.com/</p>
+ <p>HYPERLINK "http://www.authonomy.com" http://www.authonomy.com</p>
+ <p>HYPERLINK "http://www.lolasland.com" http://www.lolasland.com</p>
+<p>http://www.angiesmith.co.uk</p>
+<p>http://www.redrockcreative.co.uk</p>
+<p>http://news.sky.com/skynews/video</p>
+ <p>HYPERLINK "http://style.sky.com/" http://style.sky.com/</p>
+
+
+
+<p>GUERRILLA, London Mar 2007 – Nov 2007</p>
+<p>Web Developer</p>
+            <p>Responsibilities</p>
+
+            <p>Producing and maintaining http://www.Guerrilla.uk.com web site Using HTML, JavaScript, PHP, Photoshop, DreamWeaver 8.</p>
+            <p>Production of Site http:// HYPERLINK "http://www.shortlist.com" www.shortlist.com using ASP.NET 2</p>
+<p>This was my first project in ASP.NET 2 using Microsoft Visual Studio .NET 2005 and SQL Server to produce the CMS behind this site. I very much enjoy this development environment and want to progress in this area.</p>
 		</div>
 
 		<div class="benefits" id="zen-benefits" role="article">
-			<h3>Benefits</h3>
-			<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.</p>
+			<h3>Cementing Knowledge On Big Projects</h3>
+			<p><p>Aptivata</p>
+            <p>NHS Mobile App</p>
+            
+            <p>SEVEN SQUARED, London Aug 2009 – Dec 20011</p>
+<p>Mobile/Web Developer</p>
+<p>Responsibilities</p>
+            
+            <p>Medtronic’s innovating for life comms app.</p>
+            
+            <p>Showtime's new tv series House of Lies.</p>
+
+<p>Production of Project Ipad magazine</p>
 		</div>
 
 		<div class="requirements" id="zen-requirements" role="article">
-			<h3>Requirements</h3>
-			<p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.</p>
-			<p>Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).</p>
-			<p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We&#8217;re well past the point of needing another garden-related design.</p>
-			<p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="http://www.mezzoblue.com/zengarden/submit/guidelines/">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Zen Garden's license information.">one on this site</a> so that others may learn from your work.</p>
-			<p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
+			<h3>Currently</h3>
+			<p>TAG Wortldwide Front End Developer</p>
+            
+            <p>AA Magazine</p>
+            
+            <p>BASF STite</p>
+            
+            <p>CHI stuff</p>
+            <p>- valentines</p>
+            <p>- LEXUS</p>
+            
+            <p>BT EMAILS</p>
+            
+            <p>HTML5</p>
+            
+            <p>BANNERS</p>
+            
+            <p>SONY PHP MODULE</p>
+            
+            
+            
+            
+            
+            
 		</div>
 
 		<footer>
@@ -860,11 +962,11 @@ function number_of_files($directories) {
 		<div class="wrapper">
 
 			<div class="design-selection" id="design-selection">
-				<h3 class="select">Select a Design:</h3>
+				<h3 class="select">List of Stuff</h3>
 				<nav role="navigation">
 					<ul>
 					<li>
-						<a href="/221/" class="design-name">Mid Century Modern</a> by						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+						<a href="/221/" class="design-name">Stuff</a> by						<a href="http://andrewlohman.com/" class="designer-name">Someone</a>
 					</li>					<li>
 						<a href="/220/" class="design-name">Garments</a> by						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
 					</li>					<li>
