@@ -1,0 +1,387 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+   
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<title>template</title>
+	<script type="text/javascript" charset="utf-8">
+	
+		var myScroll;
+		
+		function init() {		
+		
+			myScroll = new iScroll('wrapper', {
+											hScrollbar: false
+										});	
+		
+			var frame = document.getElementById("frame");
+			
+			setTimeout(function() { frame.style.opacity = "0.99"; }, 100);
+			
+			setTimeout(function() { document.getElementById('box1').className = "box wave_in" }, 800);
+			
+			setTimeout(function() { document.getElementById('box2').className = "box wave_in" }, 1400);
+			setTimeout(function() { document.getElementById('box3').className = "box wave_in" }, 1600);
+			
+			setTimeout(function() { document.getElementById('box4').className = "box wave_in" }, 2200);
+			setTimeout(function() { document.getElementById('box5').className = "box wave_in" }, 2400);
+			
+			setTimeout(function() { document.getElementById('box6').className = "box wave_in" }, 3000);
+	
+	
+			setTimeout(function() { document.getElementById('box8').className = "boxslide slide_in" }, 3600);
+			setTimeout(function() { document.getElementById('box7').className = "boxslide slide_in" }, 4200);
+			
+			setTimeout(function() { document.getElementById('hotspot').className = "show_hotspot" }, 4800);
+
+			
+			
+			
+		}
+		
+		function ShowScroller() {
+			console.log("Show Scroller");
+			var scroller_scene = document.getElementById("scroller_scene");
+			var scroller_sceneBG = document.getElementById("scroller_sceneBG");
+			
+			scroller_scene.style.display = "block";
+			
+			setTimeout(function() { 
+							scroller_sceneBG.style.opacity = "0.65 !important";
+							document.getElementById('scroller_line').style.opacity = "0.99 !important";
+							document.getElementById('closeBtn').style.opacity = "0.99 !important";
+							document.getElementById('swipeText').style.opacity = "0.99 !important";
+							}, 100);
+							
+			setTimeout(function() { myScroll.refresh(); }, 200);
+							
+
+		}
+		
+		function HideScroller() {
+			console.log("Hide Scroller");
+			var scroller_scene = document.getElementById("scroller_scene");
+			var scroller_sceneBG = document.getElementById("scroller_sceneBG");
+			
+			scroller_sceneBG.style.opacity = "0 !important";
+			document.getElementById('scroller_line').style.opacity = "0 !important";
+			document.getElementById('closeBtn').style.opacity = "0 !important";
+			document.getElementById('swipeText').style.opacity = "0 !important";
+			
+			setTimeout(function() { 
+							scroller_scene.style.display = "none";
+							document.getElementById('arrow').style.opacity = "0.99 !important";
+							}, 1000);
+							
+			setTimeout(function() { myScroll.refresh(); }, 200);
+					
+		}
+		
+		
+		function start() { 
+			console.log("function start");
+			init();
+		}
+	
+		function stop(){
+    	    //window.location.reload(true);
+    	}
+		
+		document.addEventListener('DOMContentLoaded', init, false);
+		
+		
+	</script>
+	<style type="text/css">
+		
+		body{
+			padding: 0;
+			margin: 0;
+			background: #000;
+		}
+		
+		#stage{
+			width: 1024px;
+			height: 748px;
+			position: relative;
+			overflow:hidden;
+		}
+		
+		.scene{
+		}
+		
+		#scene1{
+			width: 100%;
+			height: 100%;
+			background: url('images/background.png');
+		}
+		
+		#frame {
+			position: absolute;
+			width: 1024px;
+			height: 748px;
+			background: url('images/frame.png');
+			opacity: 0;	
+			-webkit-transition-duration: 1s;
+		}
+		
+		.box {
+			position: absolute;
+			-webkit-transform: translate3d(0,0,0);
+			opacity: 0;
+			-webkit-transition-duration: 1s;
+		}
+		
+		.boxslide {
+			position: absolute;
+			opacity: 0;
+			-webkit-transition-duration: 0.5s;
+		}
+		
+		#box1 {
+			background: url('images/box1.png');
+			width: 128px;
+			height: 219px;
+			margin-left: 0px;
+			margin-top: 91px;
+		}
+		
+		#box2 {
+			background: url('images/box2.png');
+			width: 154px;
+			height: 188px;
+			margin-left: 130px;
+			margin-top: 90px;
+		}
+		
+		#box3 {
+			background: url('images/box3.png');
+			width: 141px;
+			height: 106px;
+			margin-left: 287px;
+			margin-top: 174px;
+		}
+		
+		#box4 {
+			background: url('images/box4.png');
+			width: 97px;
+			height: 81px;
+			margin-left: 558px;
+			margin-top: 92px;
+		}
+		
+		#box5 {
+			background: url('images/box5.png');
+			width: 123px;
+			height: 81px;
+			margin-left: 657px;
+			margin-top: 91px;
+		}
+		
+		#box6 {
+			background: url('images/box6.png');
+			width: 152px;
+			height: 132px;
+			margin-left: 872px;
+			margin-top: 382px;
+		}
+		
+		
+		
+		#box7 {
+			background: url('images/box7.png');
+			width: 241px;
+			height: 95px;
+			margin-left: 784px;
+			margin-top: 284px;
+			-webkit-transform: translate3d(241px, 0, 0);
+		}
+	
+		#hotspot {
+			position: absolute;
+			width: 45px;
+			height: 45px;
+			background: url("images/hotspot.png") no-repeat;
+			-webkit-animation: hot_spot 1.5s infinite;		
+			opacity: 0;
+			margin-left: 10px;
+			margin-top: 26px;
+			-webkit-transition-duration: 1s;
+		}
+		@-webkit-keyframes hot_spot {    
+			0% {  -webkit-transform: scale(1); }    
+			50% {  -webkit-transform: scale(0.8); }    
+			100% { -webkit-transform: scale(1); } 
+		} 
+		.show_hotspot {
+			opacity: 0.99 !important;
+		}
+		
+		#box8 {
+			background: url('images/box8.png');
+			width: 428px;
+			height: 285px;
+			margin-left: 0px;
+			margin-top: 382px;
+			-webkit-transform: translate3d(-428px, 0, 0);
+		}
+		
+		.slide_in {
+			-webkit-transform: translate3d(0, 0, 0) !important;
+			opacity: 0.99;
+		}
+		
+		.wave_in {
+		display: block !important;
+		/*-webkit-animation:wave_in 0.5s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;*/
+		opacity: 0.99 !important;
+		}
+		
+		@-webkit-keyframes wave_in{
+			0%{-webkit-transform: translate3d(0,0,0) scale(0)}
+			50%{-webkit-transform: translate3d(0,0,0) scale(1.2)}
+			100%{-webkit-transform: translate3d(0,0,0) scale(1)}
+		}
+		
+		
+		
+		#scroller_scene {
+			position: absolute;
+			display: none;
+			width: 1024px;
+			height: 748px;
+			-webkit-transition-duration: 1s;
+		}
+		#scroller_sceneBG {
+			position: absolute;
+			background: black;
+			opacity: 0;
+			width: 1024px;
+			height: 748px;
+			-webkit-transition-duration: 1s;
+		}
+		
+		#scroller_line {
+			position: absolute;
+			background: white;
+			margin-top: 280px;
+			-webkit-transition-duration: 1s;
+			opacity: 0;
+			
+		}
+		
+		#wrapper {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			position:relative; z-index:1;
+			width:1024px;
+			height:200px;
+			overflow: hidden;
+		}		
+			
+		#scroller {
+			width:2050px;
+			height:200px;
+			
+			padding:0;
+		}		
+			
+		#scroller ul {
+			list-style:none;
+			display:block;
+			
+			height:200px;
+			padding:0;
+			margin:0;
+			text-align:left;
+		}		
+			
+		#scroller li {
+			display:inline-block;
+			height:200px;
+		}		
+		
+		
+		#closeBtn {
+			position: absolute;
+			background: url('images/closeBtn.png');
+			width: 42px;
+			height: 42px;
+			margin-top: 505px;
+			margin-left: 926px;
+			opacity: 0;
+			-webkit-transition-duration: 1s;
+		}
+		
+		#swipeText {
+			position: absolute;
+			background: url('images/swipeText.png');
+			width: 339px;
+			height: 18px;
+			margin-top: 624px;
+			margin-left: 350px;
+			opacity: 0;
+			-webkit-transition-duration: 1s;
+		}
+		
+		#arrow {
+			position: absolute;
+			background: url('images/arrow.png');
+			width: 28px;
+			height: 42px;
+			margin-top: 688px;
+			margin-left: 957px;
+			opacity: 0;
+			-webkit-transition-duration: 1s;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div id="stage">
+		<div class="scene" id="scene1">
+			<div id="frame"></div>
+			
+			<div id="box1" class="box"></div>
+			<div id="box2" class="box"></div>
+			<div id="box3" class="box"></div>
+			<div id="box4" class="box"></div>
+			<div id="box5" class="box"></div>
+			<div id="box6" class="box"></div>
+			
+			<div id="box7" class="boxslide" onclick="ShowScroller()">
+				<div id="hotspot"></div>
+			</div>
+			<div id="box8" class="boxslide"></div>
+			
+			<div id="arrow"></div>
+
+			
+			<div id="scroller_scene">
+				<div id="scroller_sceneBG"></div>
+				
+				<div id="closeBtn" onclick="HideScroller()"></div>
+				<div id="swipeText"></div>
+				
+				
+				<div id="scroller_line">
+					<div id="wrapper">
+						<div id="scroller">
+							<ul>
+								<li><img src="images/scrollerCont1.png" /></li>
+								<li><img src="images/scrollerCont2.png" /></li>
+								<li><img src="images/scrollerCont3.png" /></li>
+								<li><img src="images/scrollerCont4.png" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>

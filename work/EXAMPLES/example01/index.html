@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script type="text/javascript" src="../../../common/js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../common/css/common.css" />  
+	<title>CGM</title>
+
+	<script type="text/javascript" charset="utf-8">
+		
+		// Call init once the document is fully loaded
+		// ===========================================================
+		window.addEventListener('load', init, false);
+		// ===========================================================
+		
+		
+		
+	
+		
+		
+		// INITIALISE
+		// ===========================================================
+		function init() {		
+			start();
+		}
+        
+        function start(){
+        
+        setTimeout(function(){
+				document.getElementById("copy_bottom").style.opacity = "1";
+			}, 13000);
+        
+        	
+        
+           var obj = document.getElementById('copy_main_left');
+           obj.style.webkitTransform = "translate3d(0px, 157px, 0)";
+           
+           obj.addEventListener("webkitTransitionEnd", function(){
+				
+				//alert("hi");				
+				
+			},1000);
+			
+			
+		  
+           
+           setTimeout(function(){
+				document.getElementById('hot_cell').className = "hot_cell hotspot";
+				document.getElementById('hot_cloud').className = "hot_cloud hotspot";
+				document.getElementById('hot_med').className = "hot_med hotspot";
+				document.getElementById('hot_mob').className = "hot_mob hotspot";
+				document.getElementById('hot_care').className = "hot_care hotspot";
+				document.getElementById('hot_patients').className = "hot_patients hotspot";
+			}, 13000);
+			
+			document.getElementById("hot_cell").onclick = function() {
+				close_copy();		
+				document.getElementById("copy_cell").style.opacity = "1";
+				document.getElementById("copy_cell").style.webkitTransform = "scale(1)";
+			}
+			document.getElementById("hot_cloud").onclick = function() {			
+				close_copy();				
+				document.getElementById("copy_cloud").style.opacity = "1";
+				document.getElementById("copy_cloud").style.webkitTransform = "scale(1)";			
+			}
+			document.getElementById("hot_med").onclick = function() {			
+				close_copy();				
+				document.getElementById("copy_med").style.opacity = "1";
+				document.getElementById("copy_med").style.webkitTransform = "scale(1)";			
+			}
+			document.getElementById("hot_mob").onclick = function() {			
+				close_copy();				
+				document.getElementById("copy_mob").style.opacity = "1";
+				document.getElementById("copy_mob").style.webkitTransform = "scale(1)";			
+			}
+			document.getElementById("hot_care").onclick = function() {			
+				close_copy();				
+				document.getElementById("copy_care").style.opacity = "1";
+				document.getElementById("copy_care").style.webkitTransform = "scale(1)";			
+			}
+			document.getElementById("hot_patients").onclick = function() {	
+				close_copy();				
+				document.getElementById("copy_patients").style.opacity = "1";
+				document.getElementById("copy_patients").style.webkitTransform = "scale(1)";			
+			}
+
+			
+			
+			document.getElementById("icon_cell_tower").onclick = function() {
+				if (document.getElementById("icon_cell_tower").style.opacity == 0){
+					close_copy();		
+					document.getElementById("copy_cell").style.opacity = "1";
+					document.getElementById("copy_cell").style.webkitTransform = "scale(1)";
+				}
+			}
+			document.getElementById("icon_cloud").onclick = function() {	
+				if (document.getElementById("icon_cloud").style.opacity == 0){
+					close_copy();				
+					document.getElementById("copy_cloud").style.opacity = "1";
+					document.getElementById("copy_cloud").style.webkitTransform = "scale(1)";
+				}	
+			}
+			document.getElementById("icon_medical").onclick = function() {
+				if (document.getElementById("icon_medical").style.opacity == 0){
+					close_copy();				
+					document.getElementById("copy_med").style.opacity = "1";
+					document.getElementById("copy_med").style.webkitTransform = "scale(1)";	
+				}		
+			}
+			document.getElementById("icon_mobile_device").onclick = function() {
+				if (document.getElementById("icon_mobile_device").style.opacity == 0){
+					close_copy();				
+					document.getElementById("copy_mob").style.opacity = "1";
+					document.getElementById("copy_mob").style.webkitTransform = "scale(1)";
+				}	
+			}
+			document.getElementById("icon_caregivers").onclick = function() {	
+				if (document.getElementById("icon_caregivers").style.opacity == 0){
+					close_copy();				
+					document.getElementById("copy_care").style.opacity = "1";
+					document.getElementById("copy_care").style.webkitTransform = "scale(1)";
+				}		
+			}
+			document.getElementById("icon_pc").onclick = function() {	
+				if (document.getElementById("icon_pc").style.opacity == 0){
+					close_copy();				
+					document.getElementById("copy_patients").style.opacity = "1";
+					document.getElementById("copy_patients").style.webkitTransform = "scale(1)";
+				}
+			}			
+			document.getElementById("icon_pacemaker").onclick = function() {	
+				if (document.getElementById("icon_pacemaker").style.opacity == 0){
+					close_copy();				
+					document.getElementById("copy_patients").style.opacity = "1";
+					document.getElementById("copy_patients").style.webkitTransform = "scale(1)";
+				}
+			}					
+			
+			
+        }   
+        
+        
+        
+        function close_copy(){
+            //closes copy boxes
+            document.getElementById("copy_cell").style.webkitTransform = "scale(0)";
+			document.getElementById("copy_cell").style.opacity = "0";
+			
+			document.getElementById("copy_cloud").style.webkitTransform = "scale(0)";
+			document.getElementById("copy_cloud").style.opacity = "0";
+			
+			document.getElementById("copy_med").style.webkitTransform = "scale(0)";
+			document.getElementById("copy_med").style.opacity = "0";
+			
+			document.getElementById("copy_mob").style.webkitTransform = "scale(0)";
+			document.getElementById("copy_mob").style.opacity = "0";
+			
+			document.getElementById("copy_care").style.webkitTransform = "scale(0)";
+			document.getElementById("copy_care").style.opacity = "0";
+			
+			document.getElementById("copy_patients").style.webkitTransform = "scale(0)";
+			document.getElementById("copy_patients").style.opacity = "0";
+        } 
+        
+        
+        
+        function stop(){
+            //called when the scrollview stops scrolling and leaves this page
+            window.location.reload();
+        }                
+        
+		// ===========================================================
+				
+		
+		
+	
+				
+	</script>
+	
+	<link href="css/main.css" rel="stylesheet" media="screen">
+
+    
+	<style type="text/css" media="screen">
+				
+		
+
+	</style>
+
+</head>
+
+<body>
+
+    <div id="stage">
+    
+    	<div id="copy_main_left"></div>
+    
+    	<div id="circle_192" class="fadein"></div>
+    	
+    	<div id="wave_mid_left" class="wave_mid01_left"></div>
+        
+        <div id="wave_mid_left" class="wave_mid02_left"></div>
+        
+        <div id="wave_mid_left" class="wave_mid03_left"></div>
+        
+        <div id="wave_mid_right" class="wave_mid01_right"></div>
+        
+        <div id="wave_mid_right" class="wave_mid02_right"></div>
+        
+        <div id="wave_mid_right" class="wave_mid03_right"></div>
+    
+    	<div id="inner_circle_57" class="fadein"></div>
+    	
+    	<div id="icon_pc" class="fadein"></div>
+    	
+    	<div id="icon_pacemaker" class="fadein"></div>
+
+        <div id="wave_inner_left" class="wave_inner01_left"></div>
+        
+        <div id="wave_inner_left" class="wave_inner02_left"></div>
+        
+        <div id="wave_inner_left" class="wave_inner03_left"></div>
+        
+        <div id="wave_inner_right" class="wave_inner01_right"></div>
+        
+        <div id="wave_inner_right" class="wave_inner02_right"></div>
+        
+        <div id="wave_inner_right" class="wave_inner03_right"></div>
+        
+        <div id="ring_360" class="fadein"></div>
+        
+        <div id="icon_cell_tower" class="fadein"></div>
+    	
+    	<div id="icon_cloud" class="fadein"></div>
+        
+        <div id="wave_outer_left" class="wave_outer01_left"></div>
+        
+        <div id="wave_outer_left" class="wave_outer02_left"></div>
+        
+        <div id="wave_outer_left" class="wave_outer03_left"></div>
+        
+        <div id="wave_outer_right" class="wave_outer01_right"></div>
+        
+        <div id="wave_outer_right" class="wave_outer02_right"></div>
+        
+        <div id="wave_outer_right" class="wave_outer03_right"></div>
+        
+        <div id="ring_533" class="fadein"></div>
+        
+        <div id="icon_medical" class="fadein"></div>
+    	
+    	<div id="icon_mobile_device" class="fadein"></div>
+    	
+    	<div id="icon_caregivers" class="fadein"></div>
+    	
+    	<div id="hot_patients" class="hot_patients"></div>
+    	<div id="copy_patients" class="copy_patients"></div>
+    	
+    	<div id="hot_cell" class="hot_cell"></div>
+    	<div id="copy_cell" class="copy_cell"></div>
+    	
+    	<div id="hot_cloud" class="hot_cloud"></div>
+    	<div id="copy_cloud" class="copy_cloud"></div>
+    	
+    	<div id="hot_med" class="hot_med"></div>
+    	<div id="copy_med" class="copy_med"></div>
+    	
+    	<div id="hot_mob" class="hot_mob"></div>
+    	<div id="copy_mob" class="copy_mob"></div>
+    	
+    	<div id="hot_care" class="hot_care"></div>
+    	<div id="copy_care" class="copy_care"></div>    
+        
+        <div id="ring_515" class="ring_515"></div>
+        
+        <div id="copy_bottom"></div>
+        
+        <div id="button"></div>
+        
+       
+
+    </div>
+    
+</body>
+</html>

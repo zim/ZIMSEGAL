@@ -1,0 +1,29 @@
+body { margin:0; padding:0; }
+
+#container { background:#fff; position:relative; width:768px; height:1004px; overflow:hidden; -webkit-transform: perspective(800); -webkit-transform-origin: 50% 50% 50%; }
+#picture_frame { background:url(../img/photo/frame.png) no-repeat; width:835px; height:706px; position:absolute; top:-40px; left:-40px; }
+#focus, #blur { position:absolute; top:0; left:0; opacity:1; -webkit-transition:opacity 2s linear; }
+#spine_bar { position:absolute; top:0; left:0; }
+#title { position:absolute; left:55px; top:635px; }
+
+img#open, img#closed { position:absolute; left:20px; top:15px; }
+
+#buttons { position:absolute; width:295px; left:90px; top:835px; margin:0; padding:0; }
+#buttons li { background:url(../img/buttons.png) no-repeat; float:left; list-style:none; width:49px; height:48px; margin:0 10px 10px 0; }
+#buttons li.active { background-position-x:right; }
+#buttons #button_1 { background-position-y:0; }
+#buttons #button_2 { background-position-y:-48px; }
+#buttons #button_3 { background-position-y:-96px; }
+#buttons #button_4 { background-position-y:-144px; }
+#buttons #button_5 { background-position-y:-192px; }
+#buttons #button_6 { background-position-y:-241px; }
+#buttons #button_7 { background-position-y:-289px; }
+#buttons #button_8 { background-position-y:-337px; }
+#buttons #button_9 { background-position-y:-385px; }
+#buttons #button_10 { background-position-y:-433px; }
+
+#popup { position:absolute; top:547px; left:415px; z-index:999; -webkit-transform: perspective(800) rotate3d(0, 1, 0, 0deg); -webkit-transform-origin: 50% 50% 50%; -webkit-transform-style: preserve-3d; }
+
+#author_btn { position:absolute; width:55px; height:50px; top:50px; left:9px; }
+#author { position:absolute; left:53px; top:56px; display:none; }
+#author.active { display:block; }

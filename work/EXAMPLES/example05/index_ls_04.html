@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>iScroll demo: simple</title>
+
+<link href="landscape_test.css" type= "text/css" rel="stylesheet" media="screen" charset="utf-8" />
+
+<script type="application/javascript" src="scripts/iscroll.js?v4"></script>
+<script type="text/javascript" src="scripts/jquery-1.4.3.js"></script>
+
+<script type="text/javascript">
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+
+
+
+
+
+
+
+var myScroll;
+var runOnce = false;
+
+//var sound1Done = false;
+//var sound2Done = false;
+
+function loaded() {
+	myScroll = new iScroll('wrapper', {
+		checkDOMChanges: true,
+		 bounce: false, 
+		 vScrollbar: false, 
+		 desktopCompatibility:true, 
+		 momentum:true,
+		 onScrollEnd: function () {
+			setTimeout(function(){
+				//alert(ourDuration);
+				//craftrandomiseMovement()
+				
+			}, ourDuration);
+		}
+	});
+	
+//	myScroll.scrollTo(0, -4713, 100);
+	
+	
+	function scrollUpp () {
+	myScroll.scrollTo(0, -10, 200, true);	
+	}
+	
+	function scrollDown () {
+	myScroll.scrollTo(0, 10, 200, true);	
+	}
+	
+//	myScroll.onScrollEnd = function () {
+//	console.log(this.X);	// Current page on X axis
+//	console.log(this.Y);	// Current page on Y axis
+//	alert("end");
+	
+//	};
+	
+	
+	setInterval(function(){
+	
+	
+	
+
+	if(myScroll.y < -660){			
+			document.getElementById('copy1').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -660){			
+			document.getElementById('copy1').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+	if(myScroll.y < -760){			
+			document.getElementById('copy2').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -760){			
+			document.getElementById('copy2').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -1600){			
+			document.getElementById('copy3').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -1600){			
+			document.getElementById('copy3').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -2200){			
+			document.getElementById('copy4').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -2200){			
+			document.getElementById('copy4').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -2450){			
+			document.getElementById('copy5').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -2450){			
+			document.getElementById('copy5').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -3500){			
+			document.getElementById('copy6').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -3500){			
+			document.getElementById('copy6').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -3800){			
+			document.getElementById('copy7').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -3800){			
+			document.getElementById('copy7').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -4700){			
+			document.getElementById('copy8').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -4700){			
+			document.getElementById('copy8').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -5600){			
+			document.getElementById('copy9').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -5600){			
+			document.getElementById('copy9').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -5900){			
+			document.getElementById('copy10').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -5900){			
+			document.getElementById('copy10').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -6450){			
+			document.getElementById('copy11').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -6450){			
+			document.getElementById('copy11').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -7200){			
+			document.getElementById('copy12').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -7200){			
+			document.getElementById('copy12').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -7700){			
+			document.getElementById('copy13').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -7700){			
+			document.getElementById('copy13').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -8200){			
+			document.getElementById('copy14').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -8200){			
+			document.getElementById('copy14').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -8500){			
+			document.getElementById('copy15').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -8500){			
+			document.getElementById('copy15').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -9380){			
+			document.getElementById('copy16').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -9380){			
+			document.getElementById('copy16').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -10300){			
+			document.getElementById('copy17').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -10300){			
+			document.getElementById('copy17').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -6450){			
+			document.getElementById('copy29').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -6650){			
+			document.getElementById('copy29').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -5000){			
+			document.getElementById('copyearl').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -5000){			
+			document.getElementById('copyearl').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		if(myScroll.y < -7780){			
+			document.getElementById('copygibson').style.opacity='1';			
+			//console.log('if state reached')			
+		} else if (myScroll.y > -7780){			
+			document.getElementById('copygibson').style.opacity='0'			
+			//console.log('if state reached')			
+		}
+		
+		
+		if(myScroll.y < 0){			
+			document.getElementById('main_overlay').style.opacity='0';			
+			//console.log('if state reached')			
+		} else if (myScroll.y == 0){			
+			document.getElementById('main_overlay').style.opacity='1'			
+			//console.log('if state reached')			
+		}
+		
+		
+		
+		
+		
+		
+
+	}, 100);
+	
+	
+	
+}
+
+
+
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+window.addEventListener('load', loaded, true);
+
+
+var myTimeout;
+	var clickCount = 0;
+	var subPosition;
+	var originX;
+	var originY;
+ 	function randomiseMovement(){
+		
+		//alert("hi");
+		
+		clearTimeout(myTimeout);
+		var animDuration = 1000 + Math.random()*500;
+		var myElement = document.getElementById('octopus');
+		myElement.style.webkitTransition = '-webkit-transform '+(animDuration/1000)+'s ease-in-out';
+		//myElement.style.webkitTransform='rotate('+(Math.random()*360)+'deg)';
+		myElement.style.webkitTransform='translateX('+(-20+(Math.random()*20))+'%) '+'translateY('+(-20+(Math.random()*20))+'%) '+'rotate('+(-20+Math.random()*40)+'deg)';
+		//translateX
+		myTimeout = setTimeout("randomiseMovement()", animDuration);
+		subPosition = $("#octopus").position();
+	//	console.log(subPosition.left);
+		//spawnBubble();
+	}
+	
+
+var myTimeout1;
+	var clickCount1 = 0;
+	var subPosition1;
+	var originX1;
+	var originY1;
+ 	function randomiseMovement1(){
+		
+		//alert("hi");
+		
+		clearTimeout(myTimeout1);
+		var animDuration1 = 1000 + Math.random()*500;
+		var myElement1 = document.getElementById('minisub');
+		myElement1.style.webkitTransition = '-webkit-transform '+(animDuration1/1000)+'s ease-in-out';
+		//myElement.style.webkitTransform='rotate('+(Math.random()*360)+'deg)';
+		myElement1.style.webkitTransform='translateX('+(-30+(Math.random()*30))+'%) '+'translateY('+(-40+(Math.random()*50))+'%) '+'rotate(0deg)';
+		//translateX
+		myTimeout1 = setTimeout("randomiseMovement1()", animDuration1);
+		subPosition1 = $("#minisub").position();
+	//	console.log(subPosition1.left);
+		//spawnBubble();
+	}
+
+	var myCraftTimeout;
+	var craftclickCount = 0;
+	var craftPosition;
+	var craftoriginX;
+	var craftoriginY;
+	var craftTop;
+	var oldScroll;
+	var lastDir;
+	var oldCraftTop;
+	var animReset = true;
+	var octopus_fired = false;
+	var minisub_fired = false;
+	var craft_disable = false;
+	var rope_disable = false;
+	
+	var craftanimbool = false;
+	var shark_fired = false;
+	var mil_sub_fired = false;
+	var bond_car_fired = false;
+	var thunderbird_fired = false;
+	var craftLeft;
+ 	function craftrandomiseMovement(){
+		
+		//alert("craft anim");
+		
+		clearTimeout(myCraftTimeout);
+		var craftanimDuration = 1000 + Math.random()*500;
+		var mycraftElement = document.getElementById('main-box');
+		
+		mycraftElement.style.webkitTransition = '-webkit-transform '+(craftanimDuration/1000)+'s ease-in-out';
+			
+		
+		//myElement.style.webkitTransform='rotate('+(Math.random()*360)+'deg)';
+		//translate3d(300px, ' + craftTop + 'px, 0px)
+		if(oldCraftTop<=craftTop){
+			mycraftElement.style.webkitTransform='translate3d('+(300+(-20+(Math.random()*40)))+'px, '+(craftTop+(-30+(Math.random()*60)))+'px, '+'0px'+') '+'rotate('+(-15+(Math.random()*30))+'deg)';
+		}else{
+			mycraftElement.style.webkitTransform='translate3d('+(300+(-20+(Math.random()*40)))+'px, '+(craftTop+(-30+(Math.random()*60)))+'px, '+'0px'+') '+'rotate(180deg)';
+		}
+		
+		//translateX
+		myCraftTimeout = setTimeout("craftrandomiseMovement()", craftanimDuration);
+		craftPosition = $("#main-box").position();
+		//console.log("--:" +mycraftElement.style.webkitTransform);
+		oldCraftTop = craftTop;
+		//spawnBubble();
+	}
+	
+	function resetAnimations(){
+		octopus_fired = false;
+		minisub_fired = false;
+		craft_disable = false;
+		rope_disable = false;
+		craftanimbool = false;
+		shark_fired = false;
+		mil_sub_fired = false;
+		bond_car_fired = false;
+		thunderbird_fired = false;
+		//reset all the css on our divs:
+		document.getElementById('shark').style.webkitAnimationName = "";
+		document.getElementById('military_sub').style.webkitAnimationName = "";
+		document.getElementById('bond_car').style.webkitAnimationName = "";
+		document.getElementById('thunderbird').style.webkitAnimationName = "";
+		//reset rope:
+		$("#rope").css('-webkit-transition-duration', '');
+		$(".rope").css('-webkit-transform', 'perspective(500) translate3d(-1px, -4px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+		$(".rope").css('height', 180);
+		//reset craft:
+		$("#main-box").css('-webkit-transition', 'none');
+		$("#main-box").css('-webkit-transform', 'perspective(500) translate3d(300px, 256px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+		clearTimeout(myTimeout1);
+		clearTimeout(myTimeout);
+		clearTimeout(myCraftTimeout);
+		animReset = true;
+	}
+	
+
+$(function() {
+	
+	
+	
+	//alert("hello");
+	
+//	$('#button').click(function() {
+	//  alert('Handler for .click() called.');
+//	  myScroll.scrollTo(0, 0, 10000)
+	  
+//	});
+
+var octopus_fired = false;
+var minisub_fired = false;
+var craft_disable = false;
+var rope_disable = false;
+
+var craftanimbool = false;
+
+var craftLeft;
+setInterval(function(){
+		if((myScroll.y >= 0) && (!animReset)){
+			resetAnimations();
+		}
+		if ((myScroll.y <= -340) && animReset){
+			//mark animation as started
+			animReset = false;
+		}
+	    if ((myScroll.y <= -340) &&(!shark_fired) ){				
+			document.getElementById('shark').style.webkitAnimationName = "sharkanim";
+			document.getElementById('shark').style.webkitAnimationDuration = "10s";	
+			shark_fired = true;		
+		};
+		
+		if ((myScroll.y <= -2600)&&(!mil_sub_fired)){		
+			
+			document.getElementById('military_sub').style.webkitAnimationName = "militarysubanim";
+			document.getElementById('military_sub').style.webkitAnimationDuration = "30s";	
+			mil_sub_fired = true;
+		};
+		
+		
+		
+		if ((myScroll.y <= -2300)&&(!octopus_fired)){		
+			
+			//document.getElementById('octopus').style.webkitAnimationName = "sharkanim";
+			
+		//	randomiseMovement();
+		
+		randomiseMovement(); clickCount++;
+		
+		octopus_fired = true;
+		
+		};
+		
+		
+		
+		
+		if ((myScroll.y <= -6200)&&(!bond_car_fired)){				
+			document.getElementById('bond_car').style.webkitAnimationName = "bondcaranim";
+			document.getElementById('bond_car').style.webkitAnimationDuration = "12s";
+			bond_car_fired = true;		
+		};
+		
+		if ((myScroll.y <= -8600)&&(!thunderbird_fired)){				
+			document.getElementById('thunderbird').style.webkitAnimationName = "thunderbirdanim";
+			document.getElementById('thunderbird').style.webkitAnimationDuration = "12s";
+			thunderbird_fired = true;		
+		};
+		
+		if ((myScroll.y <= -9690)&&(!minisub_fired)){		
+			
+			//document.getElementById('octopus').style.webkitAnimationName = "sharkanim";
+			
+			//	randomiseMovement();
+		
+			randomiseMovement1(); clickCount1++;
+		
+			minisub_fired = true;
+		
+		};
+		
+		
+		
+		
+		
+	
+	
+	
+	<!-- BOAT //-->
+	var posYy = 0;
+	
+	var addPix = 0;
+	
+	var addPix1 = 0;
+	
+	var ropeHeight = 180;
+	
+	var ropeTop = 0;
+	
+	<!-- SARK //-->
+	
+	var sharkRight = 0;
+	
+	
+	
+	document.getElementById('scrollY').innerHTML =  myScroll.y;
+	
+	if ((myScroll.y <= 0)&&(myScroll.y >= -411)){
+		
+			//alert(Math.round(myScroll.y));
+			
+			posYy = Math.round(Math.abs(myScroll.y));			
+			
+			addPix = posYy - 180;
+			
+			addPix1 = posYy - 200;
+			
+			if ((myScroll.y <= 0)&&(myScroll.y >= -190)){
+			
+			ropeTop = 180+addPix;
+			
+			
+			//$(".rope").css('height', ropeHeight);
+			
+			//$("#rope").css('top', ropeTop);
+			
+			if(!rope_disable){
+				
+				$(".rope").css('-webkit-transform', 'perspective(500) translate3d(-1px, ' + ropeTop + 'px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+				
+				
+			};
+			
+			//$(".rope").css('-webkit-transform', 'perspective(500) translate3d(-1px, ' + ropeTop + 'px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+			
+			
+			
+			};
+		
+			if ((myScroll.y <= -190)&&(myScroll.y >= -411)){
+				
+					ropeHeight = 190+addPix1;
+				
+				$(".rope").css('height', ropeHeight);
+			};
+		
+		};
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		if ((myScroll.y < 0)){
+			
+			
+			
+			
+			
+		
+			//alert(Math.round(myScroll.y));
+			
+			posYy = Math.round(Math.abs(myScroll.y));			
+			
+			addPix = posYy - 256;
+			
+			ropeHeight = 180+addPix;
+			
+			craftTop = 512+addPix;
+			
+			if ((!craft_disable)){
+				
+				
+			
+				$("#main-box").css('-webkit-transform', 'perspective(500) translate3d(300px, ' + craftTop + 'px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+				
+				if ((myScroll.y <= -420)){
+			
+					//	alert("hi1");
+				
+					craft_disable = true;
+					rope_disable= true;
+			
+			
+				};
+			
+			};
+			
+			
+			
+			if ((myScroll.y >= -420)&&(craft_disable)){
+			
+				//	alert("hi");
+			
+				$("#main-box").css('-webkit-transform', 'perspective(500) translate3d(300px, 666px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+				
+				//craft_disable = true;
+			
+			
+			}else if (myScroll.y <= -420){
+				
+				 if(oldScroll!=myScroll.y){
+				
+					//console.log("--> "+oldScroll+" : "+ myScroll.y+" : "+(10/(oldScroll - myScroll.y)));
+					//mycraftElement.style.webkitTransition = 'none';
+					//$("#main-box").css('-webkit-transition','none');
+					//(craftanimDuration/1000)
+					//$("#main-box").css('-webkit-transition', '-webkit-transform '+Math.abs(10/(oldScroll - myScroll.y))+'s linear');
+					$("#main-box").css('-webkit-transition', '-webkit-transform '+2+'s ease-out');
+			
+						$("#main-box").css('-webkit-transform', 'translate3d(300px, ' + craftTop + 'px, 0px) rotate3d(0, 0, 0, 0deg)');
+					
+					//myElement.style.webkitTransform='rotate('+(Math.random()*360)+'deg)';
+					//translate3d(300px, ' + craftTop + 'px, 0px)
+					//mycraftElement.style.webkitTransform='translate3d('+(300+(-20+(Math.random()*40)))+'px, '+(craftTop+(-30+(Math.random()*60)))+'px, '+'0px'+') '+'rotate(0deg)';
+					clearTimeout(myCraftTimeout);
+					craftanimbool = false;
+					
+				}else {/**/
+					if(!craftanimbool){
+						//console.log("hi ya");
+						//$("#main-box").css('-webkit-transition', '-webkit-transform '+(craftanimDuration/1000)+'s ease-in-out');
+						craftrandomiseMovement();
+						craftanimbool = true;
+					
+					}
+				
+				}
+				//$("#main-box").css('-webkit-transform', 'perspective(500) translate3d(300px, ' + craftTop + 'px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+				
+				
+			};
+			
+				
+		
+		};
+		
+		
+		oldScroll = myScroll.y;
+		
+		
+		<!-- TURN ON LIGHTS -->
+		if(myScroll.y < -5430){	
+		//alert("lights on");		
+			$(".craft_small").css('background', 'url(images/item/craft_small_01_lights.png) no-repeat');		
+		//	$(".craft_small").css('border', '1px solid red');	
+			//console.log('if state reached')			
+		} else if (myScroll.y > -5430){			
+			$(".craft_small").css('background', 'url(images/item/craft_small_01.png) no-repeat');		
+			//console.log('if state reached')			
+		}
+	
+		
+		
+		if (myScroll.y <= -412){	
+			
+			
+			
+			$("#rope").css('-webkit-transition-duration', '2.0s');
+			
+			$("#rope").css('-webkit-transform', 'perspective(500) translate3d(-1px, -1004px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg)');
+			
+			setTimeout( function() {
+				$("#rope").css('display', 'none');
+			}, 1000 );
+
+			
+		};
+		
+		if (myScroll.y >= -412){		
+			
+			$("#rope").css('display', 'block');
+			
+		};
+		
+		
+
+
+}, 10);
+
+
+		subPosition = $("#octopus").position();
+		originX = subPosition.left;
+		originY = subPosition.top;
+		
+
+		subPosition1 = $("#minisub").position();
+		originX1 = subPosition1.left;
+		originY1 = subPosition1.top;
+		
+		craftPosition = $("#main-box").position();
+		craftoriginX = craftPosition.left;
+		craftoriginY = craftPosition.top;
+
+
+
+
+	//$('#button_start').click(function() {
+	//  alert('Handler for .click() called.');
+	//  scrollDown_auto();
+	//});
+	
+	//$('#scroller').bind('webkitTransitionEnd',function(){
+		
+	//	alert("");
+		
+	//	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+</script>
+<script src="swipe/swipe_message.js"></script>	
+<style type="text/css" media="all">
+
+
+
+</style>
+</head>
+<body onLoad="">
+
+<section id="swipe_message" style="background:#000; opacity:0.6; width:1024px; height:65px; position:absolute; z-index:999; margin:-65px 0 0; -webkit-transition-duration:500ms;">
+		<img src="swipe/swipe_message.png" style="position:absolute; left:50%; top:50%; margin:-11px 0 0 -121px;" />
+</section> <!-- swipe_message -->
+
+
+<div id="wrapper">
+
+
+
+	<div id="scroller">
+		
+			<img src="images/bg_ls_01.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_02.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_03.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_04.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_05.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_06.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_07.jpg" style="padding:0; margin-top: 0px;" />
+            <img src="images/bg_ls_08.jpg" style="padding:0; margin-top: 0px;" />
+            <img src="images/bg_ls_09.jpg" style="padding:0; margin-top: 0px;" />
+            <img src="images/bg_ls_10.jpg" style="padding:0; margin-top: 0px;" />            
+            <img src="images/bg_ls_11.jpg" id="button" style="padding:0; margin-top: 0px;" />
+            
+            <!-- boat -->
+            
+           <div id="boat" class="boat"></div>
+           <div id="water" class="water"></div>
+            
+            <div id="captions">   
+            	
+                <span id="shark"></span>
+                <span id="military_sub"></span>
+                <span id="octopus"></span>
+                <span id="bond_car"></span>
+                <span id="thunderbird"></span>
+                <span id="minisub"></span>
+                
+                
+                <span id="copy1"></span>
+                <span id="copy2"></span>
+                <span id="copy3"></span>
+                <span id="copy4"></span>
+                <span id="copy5"></span>
+                <span id="copy6"></span>
+                <span id="copy7"></span>
+                <span id="copy8"></span>
+                <span id="copy9"></span>
+                <span id="copy10"></span>
+                <span id="copy11"></span>
+                <span id="copy12"></span>
+                <span id="copy13"></span>
+                <span id="copy14"></span>
+                <span id="copy15"></span>
+                <span id="copy16"></span>
+                <span id="copy17"></span>
+                <span id="copy18"></span>
+                <span id="copy19"></span>
+                <span id="copy20"></span>
+                <span id="copy21"></span>
+                <span id="copy22"></span>
+                <span id="copy23"></span>
+                <span id="copy24"></span>
+                <span id="copy25"></span>
+                <span id="copy26"></span>
+                <span id="copy27"></span>
+                <span id="copy28"></span>
+                <span id="copy29"></span>
+                <span id="copy30"></span>
+                
+                <span id="copyearl"></span>
+                <span id="copygibson"></span>
+                
+                <span id="main_overlay"></span>
+                
+           
+                
+            </div>	
+            
+		<div id="main-box" class="craft_small"></div>
+        
+        <div id="rope" class="rope" style="height:180px"></div>
+        
+	</div>
+    
+    
+    
+    
+    
+  
+  <div style="position: absolute; right: 10px; top: 300px; z-index:1000; display: none;">
+  
+      <div id="debugX" >0</div>
+      <div id="debugY">0</div>
+      
+      <div id="scrollY" style="color: #fff;">0</div>
+      
+      <div id="debugXdelta">0</div>
+      <div id="debugYdelta">0</div>
+      
+      <div id="startX">0</div>
+      <div id="startY">0</div>
+      
+      <div id="endX">0</div>
+      <div id="endY">0</div>
+      
+      <div id="balloonPosition">0</div>
+  
+  </div>
+    
+    
+</div>
+
+
+
+
+</body>
+</html>

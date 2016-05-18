@@ -1,0 +1,747 @@
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+  -webkit-tap-highlight-color:transparent;
+}
+
+body,ul,li {
+	padding:0;
+	margin:0;
+	border:0;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-perspective3d: 700;
+}
+
+body {
+	font-size:12px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	font-family:helvetica;
+	width: 1024px;
+	height: 1004px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	overflow: hidden;
+	background: #000000;
+}
+
+
+
+#wrapper {
+	position:absolute;
+	
+	top:0px;
+	bottom:0px;
+	left:0px;
+	width:1024px;
+	background:#aaa;
+	height: 1004px;
+	overflow:auto;
+}
+
+#scroller {
+	position:absolute;
+	
+/*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	width:716px;
+	height: 11566px;
+	padding:0;
+	z-index:0;
+}
+
+#scroller img {
+	
+	padding:0;
+	margin:0;
+	border: 0px solid red;
+	float:left;
+	display:inline;
+}
+
+#captions {
+	position: absolute;
+	width: 2000px;
+	left: -1000px;
+	border: 0px solid red;
+	height:100%;
+
+	
+}
+
+#captions span {
+	position: absolute;
+}
+
+
+
+#button_start{
+	background:url(images/copy/copy_556.png) no-repeat;
+	bottom: 10928px;
+	right: 10px;
+	width: 174px;
+	height: 116px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;
+	z-index:4000;
+}
+
+#main_overlay{
+	background:url(images/oceanicoverlay_ls.png) no-repeat;
+	bottom: 10824px;
+	left: 1001px;
+	width: 71023px;
+	height: 731px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;
+	z-index:3020;
+}
+		
+#copy1{
+	background:url(images/copy/copy_556.png) no-repeat;
+	bottom: 10228px;
+	right: 10px;
+	width: 174px;
+	height: 116px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index:2000;
+}
+
+#copy2{
+	background:url(images/copy/copy_1000.png) no-repeat;
+	bottom: 9908px;
+	right: -10px;
+	width: 233px;
+	height: 207px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy3{
+	background:url(images/copy/copy_1609.png) no-repeat;
+	bottom: 9308px;
+	right: -10px;
+	width: 233px;
+	height: 113px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy4{
+	background:url(images/copy/copy_2100.png) no-repeat;
+	bottom: 8690px;
+	left: 1026px;
+	width: 215px;
+	height: 113px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy5{
+	background:url(images/copy/copy_2383.png) no-repeat;
+	bottom: 8390px;;
+	left: 1026px;
+	width: 195px;
+	height: 231px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy6{
+	background:url(images/copy/copy_3500.png) no-repeat;
+	bottom: 7200px;
+	right: 0px;
+	width: 218px;
+	height: 231px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy7{
+	background:url(images/copy/copy_3795.png) no-repeat;
+	bottom: 7000px;
+	left: 1026px;
+	width: 236px;
+	height: 113px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy8{
+	background:url(images/copy/copy_4500.png) no-repeat;
+	bottom: 6250px;
+	right: 0px;
+	width: 251px;
+	height: 113px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy9{
+	background:url(images/copy/copy_5608.png) no-repeat;
+	bottom: 5250px;
+	right: 0px;
+	width: 292px;
+	height: 137px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy10{
+	background:url(images/copy/copy_6000.png) no-repeat;
+	bottom: 4950px;
+	left: 1026px;
+	width: 259px;
+	height: 137px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy11{
+	background:url(images/copy/copy_6500.png) no-repeat;
+	bottom: 4350px;
+	right: 10px;
+	width: 212px;
+	height: 255px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy12{
+	background:url(images/copy/copy_7235.png) no-repeat;
+	bottom: 3650px;
+	right: 0px;
+	width: 327px;
+	height: 184px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy13{
+	background:url(images/copy/copy_7686.png) no-repeat;
+	bottom: 3150px;
+	left: 1026px;
+	width: 227px;
+	height: 184px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy14{
+	background:url(images/copy/copy_8047.png) no-repeat;
+	bottom: 2700px;
+	left: 1026px;
+	width: 270px;
+	height: 160px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy15{
+	background:url(images/copy/copy_8505.png) no-repeat;
+	bottom: 2100px;
+	left: 1026px;
+	width: 268px;
+	height: 184px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;
+	z-index: 2000;
+}
+
+#copy16{
+	background:url(images/copy/copy_9144.png) no-repeat;
+	bottom: 1500px;
+	left: 1026px;
+	width: 252px;
+	height: 152px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy17{
+	background:url(images/copy/copy_10902.png) no-repeat;
+	bottom: 310px;
+	left: 1026px;
+	width: 387px;
+	height: 468px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy18{
+	background:url(images/copy/depth_0.png) no-repeat;
+	bottom: 5320px;
+	left: 26px;
+	width: 50px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy19{
+	background:url(images/copy/depth_1000.png) no-repeat;
+	bottom: 10087px;
+	left: 1010px;
+	width: 52px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy20{
+	background:url(images/copy/depth_2000.png) no-repeat;
+	bottom: 8907px;
+	right: 0px;
+	width: 52px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy21{
+	background:url(images/copy/depth_3000.png) no-repeat;
+	bottom: 7900px;
+	left: 1026px;
+	width: 52px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy22{
+	background:url(images/copy/depth_4000.png) no-repeat;
+	bottom: 6850px;
+	right: 0px;
+	width: 53px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy23{
+	background:url(images/copy/depth_5000.png) no-repeat;
+	bottom: 5850px;
+	left: 1026px;
+	width: 52px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy24{
+	background:url(images/copy/depth_6000.png) no-repeat;
+	bottom: 5050px;
+	right: 26px;
+	width: 53px;
+	height: 21px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy25{
+	background:url(images/copy/depth_7000.png) no-repeat;
+	bottom: 3750px;
+	left: 1026px;
+	width: 182px;
+	height: 49px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy26{
+	background:url(images/copy/depth_8000.png) no-repeat;
+	bottom: 2820px;
+	right: 0px;
+	width: 186px;
+	height: 49px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy27{
+	background:url(images/copy/depth_9000.png) no-repeat;
+	bottom: 1750px;
+	left: 1026px;
+	width: 182px;
+	height: 49px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy28{
+	background:url(images/copy/depth_10000.png) no-repeat;
+	bottom: 720px;
+	right: 0px;
+	width: 186px;
+	height: 49px;
+		-webkit-transition-duration:0.8s;
+	opacity:1;z-index: 2000;
+}
+
+#copy29{
+	background:url(images/copy/lotus.png) no-repeat;
+	bottom: 4150px;
+	left: 1026px;
+	width: 311px;
+	height: 66px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+#copy30{
+	background:url(images/copy/mobydick.png) no-repeat;
+	bottom: 8550px;
+	right: 0px;
+	width: 69px;
+	height: 22px;
+	-webkit-transition-duration:0.8s;
+	opacity:1;
+	z-index: 2000;
+}
+
+#copyearl{
+	background:url(images/copy/earl_copy.png) no-repeat;
+	bottom: 5950px;
+	right: 40px;
+	width: 147px;
+	height: 41px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+#copygibson{
+	background:url(images/copy/copy_gibson.png) no-repeat;
+	bottom: 3050px;
+	left: 1044px;
+	width: 154px;
+	height: 58px;
+	-webkit-transition-duration:0.8s;
+	opacity:0;
+	z-index: 2000;
+}
+
+
+
+.show{
+	display: block!important;
+}
+
+.fadein{
+	opacity: 1 !important;
+	
+}
+		
+.fadeout{
+	opacity: 0 !important;
+	z-index: -1 !important;
+}
+
+
+#rocks_01{
+	position: absolute;	
+	bottom: 2090px;
+	right: 0px;
+	width: 637px;
+	height: 450px;
+	z-index: 2000;
+	}
+
+
+ .boat {
+		position: absolute;
+		height: 480px;
+		width: 1023px;
+		background-color: transparent;
+		left: 0px;
+		top:180px;
+		z-index:1001;
+		background:url(images/item/boat_02.png) no-repeat;
+	}
+
+.water {
+		position: absolute;
+		height: 214px;
+		width: 1023px;
+		background-color: transparent;
+		left: 0px;
+		top:660px;
+		z-index:3001;
+		background:url(images/copy/water_01.png) no-repeat;
+	}
+
+
+ .craft_small {
+		position: absolute;		
+		width: 154px;
+		height: 287px;
+		background-color: green;
+		
+		
+		
+		background:url(images/item/craft_small_01.png) no-repeat;
+		border: 0px solid red;
+		z-index:1100;
+		
+		
+		-webkit-transition-timing-function: ease-out;
+		
+		 -webkit-transform: perspective(500) translate3d(300px, 256px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);
+	}
+	
+#rope, .rope {
+		position: absolute;		
+		width: 154px;
+		height: 180px;
+		background-color: green;
+		left: 347px;
+		top:282px;
+		z-index:2001;
+		background:url(images/item/rope_02.png) no-repeat bottom left;
+		border: 0px solid red;
+		
+		 -webkit-transform: perspective(500) translate3d(-1px, -4px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);
+	}
+	
+.rope_up {
+	
+	-webkit-transition-property: height;
+		-webkit-transition-duration: .5s;
+		-webkit-transition-timing-function: default;
+		height: 40px;
+	}	
+	 
+	.box:active {
+		background-color: transparent;
+	}
+	
+/* SHARK ANIM */
+
+#shark{
+	background:url(images/item/shark_swimmer_02.png) no-repeat;
+	bottom: 10237px;
+	right: -1304px;
+	width: 1000px;
+	height: 258px;
+	
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% 50%;
+	-webkit-transition-timing-function: ease-in;
+	
+	
+	
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+.shark1{
+	
+	
+ 	-webkit-transition-duration: 4.0s;
+	-webkit-transform-origin: 50% 50% 50%;
+	
+	-webkit-transition-timing-function: ease-in;
+	-webkit-animation-name:sharkanim;
+	-webkit-transform-style: preserve-3d;
+	
+	
+
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+@-webkit-keyframes sharkanim { 
+	0% { -webkit-transform: perspective(500) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);  } 
+	100% { -webkit-transform: perspective(500) translate3d(-3900px, 0px, -400px) scale3d(1, 1, 1) rotate3d(0, 100, 0, 0deg);  } 
+}
+
+/* MILITARY SUB ANIM */
+
+#military_sub{
+	position: absolute;
+	background:url(images/item/military_sub_01.png) no-repeat;
+	bottom: 7537px;
+	left: 100px;
+	width: 1100px;
+	height: 417px;
+	
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% 50%;
+	-webkit-transition-timing-function: ease-in;
+	
+	z-index: 2000;
+	
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+.military_sub{
+	
+	
+ 	-webkit-transition-duration: 50.0s;
+	-webkit-transform-origin: 50% 50% 50%;
+	
+	-webkit-transition-timing-function: ease-in;
+	-webkit-animation-name:militarysubanim;
+	-webkit-transform-style: preserve-3d;
+	
+	
+
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+@-webkit-keyframes militarysubanim { 
+	0% { -webkit-transform: perspective(500) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);  } 
+	100% { -webkit-transform: perspective(500) translate3d(3900px, 0px, 500px) scale3d(1, 1, 1) rotate3d(0, 100, 0, 0deg);  } 
+}
+
+
+/* OCTOPUS ANIM */
+
+#octopus{
+	position: absolute;
+	background:url(images/item/octopus_01.png) no-repeat;
+	bottom: 6920px;
+	left: 1600px;
+	width: 2009px;
+	height: 179px;
+	
+	z-index: 2100;
+	/*-webkit-transition: -webkit-transform 3s ease-in-out;
+	
+	
+	
+	/*-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% 50%;
+	-webkit-transition-timing-function: ease-in;
+	
+	
+	
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+/* BOND ANIM */
+
+#bond_car{
+	background:url(images/item/bond_car_01.png) no-repeat;
+	bottom: 4237px;
+	right: -740px;
+	width: 708px;
+	height: 268px;	
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% 50%;
+	-webkit-transition-timing-function: ease-in;
+	
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+	
+	z-index:3020;
+}
+
+.bond_car1{
+	
+	
+ 	-webkit-transition-duration: 4.0s;
+	-webkit-transform-origin: 50% 50% 50%;	
+	-webkit-transition-timing-function: ease-in;
+	-webkit-animation-name:bondcaranim;
+	-webkit-transform-style: preserve-3d;
+z-index:3020;
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+@-webkit-keyframes bondcaranim { 
+	0% { -webkit-transform: perspective(500) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);  } 
+	30% { -webkit-transform: perspective(500) translate3d(-1000px, 0px, -200px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 40deg);  }
+	50% { -webkit-transform: perspective(500) translate3d(-3900px, -2000px, -400px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 40deg);  }  
+	80% { -webkit-transform: perspective(500) translate3d(-3900px, -2000px, -400px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 40deg);  } 
+	100% { -webkit-transform: perspective(500) translate3d(-4800px, -3000px, -800px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 40deg);  } 
+}
+
+/* THUNDERBIRD ANIM */
+
+#thunderbird{
+	background:url(images/item/thunderbirds_01.png) no-repeat;
+	bottom: 1437px;
+	right: -1200px;
+	width: 1200px;
+	height: 638px;	
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% 50%;
+	-webkit-transition-timing-function: ease-in;
+	
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+.thunderbird1{
+	
+	
+ 	-webkit-transition-duration: 4.0s;
+	-webkit-transform-origin: 50% 50% 50%;	
+	-webkit-transition-timing-function: ease-in;
+	-webkit-animation-name:thunderbirdanim;
+	-webkit-transform-style: preserve-3d;
+
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+@-webkit-keyframes thunderbirdanim { 
+	0% { -webkit-transform: perspective(500) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);  } 
+	 
+	100% { -webkit-transform: perspective(500) translate3d(-2200px, 0px, 400px) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg);  } 
+}
+
+/* MINISUB ANIM */
+
+#minisub{
+	position: absolute;
+	background:url(images/item/trieste_01.png) no-repeat;
+	bottom: 500px;
+	left: 1600px;
+	width: 356px;
+	height: 298px;
+	
+	z-index: 2100;
+	/*-webkit-transition: -webkit-transform 3s ease-in-out;
+	
+	
+	
+	/*-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% 50%;
+	-webkit-transition-timing-function: ease-in;
+	
+	
+	
+	/*-webkit-transition-duration:0.8s;
+	opacity:1;*/
+}
+
+
