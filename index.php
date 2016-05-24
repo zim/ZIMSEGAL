@@ -560,7 +560,7 @@ function number_of_files($directories) {
 
 	<section class="intro" id="zen-intro">
 		<header role="banner">
-			<h1>CSS Zen cunt</h1>
+			<h1>CSS Zen</h1>
 			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
 		</header>
 
@@ -724,7 +724,7 @@ Coding of site for cross browser compatability.</p>
 				<nav role="navigation">
 					<ul>
 					<li>
-						<a href="/221/" class="design-name">Stuff</a> by						<a href="http://andrewlohman.com/" class="designer-name">Someone</a>
+						<a href="cv/cv.php" class="design-name">CV</a>
 					</li>					<li>
 						<a href="/220/" class="design-name">Garments</a> by						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
 					</li>					<li>

@@ -43,6 +43,98 @@ p, ul, dl, ol, table { font-size: 16px; margin: 0 0 1.5em; }
 
 form { margin: 0 0 1.5em; }
 
+/* ul list styles main */
+.main ul{
+    outline: 1px solid red;
+    list-style: none;
+    position: relative;
+    margin: 0px 0px 2em 0px;
+    padding: 0px 0px 0px 0px;
+    
+}
+.main ul li{
+/*
+    font-size: 20px;
+        text-transform: uppercase;
+*/
+    letter-spacing: 0.1em;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    
+}
+
+.main ul li.company{
+    font-weight: bold;
+}
+
+.main ul li ul{
+    outline: 1px solid yellow;
+    margin: 0px 0px 0em 0px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1px;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #000;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    color: #000;
+    background-color: transparent;
+    border: none;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary,
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    color: #000;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color:transparent;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.open>.dropdown-menu {
+    display: inline-block;
+    width: 100%;
+}
+
+.glyphicon {
+    font-size: 14px;
+    top: 1px;
+}
+
 /* inline */
 
 label { font-size: 1.6rem; }
@@ -131,10 +223,11 @@ sub, sup { line-height: 0; }
 -------------------------------------------*/
 .page-wrapper { width: 90%; margin: 0 auto; }
 
-.main h3, .preamble h3, .select { visibility: hidden; font-size: 2rem; text-transform: uppercase; letter-spacing: 0.1em; color: #263358; }
+
+.main h3, .preamble h3, .cv-contact h3, .select { visibility: hidden; font-size: 2rem; text-transform: uppercase; letter-spacing: 0.1em; color: #263358; }
 .wf-active .main h3, .wf-active .preamble h3 { font-weight: 900; }
 
-.main h3:after, .preamble h3:after, .select:after { visibility: visible; display: block; }
+.main h3:after, .preamble h3:after, .cv-contact h3:after, .select:after { visibility: visible; display: block; }
 
 .main p, .preamble p { font-size: 2rem; }
 .wf-active .main p, .wf-active .preamble p { line-height: 1.4; }
@@ -184,11 +277,23 @@ sub, sup { line-height: 0; }
 .preamble { background: transparent url(i/sep.png) no-repeat 50% 0; }
 	.preamble h3:after { visibility: visible; content: "Early Career";  }
 
+/*-------------------------------------------    
+    Preamble
+-------------------------------------------*/
+.cv-contact { background: transparent url(i/sep.png) no-repeat 50% 0; }
+	.cv-contact h3:after { visibility: visible; content: "Contact";  }
+
 
 /*-------------------------------------------    
 	Explanation
 -------------------------------------------*/
 .explanation h3:after { content: "Learning in the Field";  }
+.cv-profile h3:after { content: "Profile";  }
+.cv-experience h3:after { content: "Work Experience";  }
+.cv-education h3:after { content: "Education";  }
+.cv-interests h3:after { content: "Interests and Achievements";  }
+
+
 
 
 /*-------------------------------------------    
@@ -280,7 +385,13 @@ footer { font-size: 1.3rem; }
 	.intro:before { content: ""; display: block; width: 105px; height: 30px; position: fixed; top: 154px; left: 3%; background: transparent url(s/czg.svg) no-repeat -184px -99px; }
 
 	[role="article"], [role="banner"], footer { padding: 0 30% 0em 10%; text-align: right; position: relative; }
-		[role="article"] h3, [role="banner"] h2 { position: absolute; top: -0.75em; left: 75%; width: 10em; text-align: left; font-size: 1.5rem; letter-spacing: 0; }
+    
+    .main-cv [role="article"] {
+    
+    text-align: left;
+}
+    
+		[role="article"] h3, [role="banner"] h2 { position: absolute; top: 0; left: 75%; width: 10em; text-align: left; font-size: 2.5rem; letter-spacing: 0; }
 		[role="article"] h3:after { position: absolute; top: 0; }
 
 	[role="banner"] { padding-top: 200px; padding-bottom: 3em; }
